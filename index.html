@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover online earning opportunities, digital skills and practical money-making guides for Kenya.">
+  <meta name="theme-color" content="#102d24">
+  <title>Smart Hustle Kenya | Earn Smarter</title>
+
+  <style>
+    :root {
+      --green: #176b45;
+      --dark: #102d24;
+      --light: #f4f7f5;
+      --text: #202b27;
+      --muted: #66736c;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--green);
+    }
+
+    header {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    nav {
+      max-width: 1000px;
+      margin: auto;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 800;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    nav div a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      max-width: 1000px;
+      margin: auto;
+      padding: 58px 20px 66px;
+    }
+
+    .eyebrow {
+      color: #a7e9c4;
+      font-weight: bold;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .hero h1 {
+      max-width: 650px;
+      font-size: clamp(34px, 7vw, 58px);
+      line-height: 1.12;
+      margin: 14px 0;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #d7e5dd;
+      font-size: 17px;
+    }
+
+    .hero-link {
+      display: inline-block;
+      background: #a7e9c4;
+      color: var(--dark);
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    main {
+      max-width: 1000px;
+      padding: 28px 20px 55px;
+      margin: auto;
+    }
+
+    .section-heading {
+      margin-top: 15px;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 4px;
+      font-size: 27px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .search {
+      width: 100%;
+      padding: 15px;
+      margin: 18px 0 22px;
+      border: 1px solid #d4ddd7;
+      border-radius: 10px;
+      background: white;
+      font-size: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid #e1e8e3;
+      border-radius: 13px;
+      padding: 21px;
+      box-shadow: 0 3px 12px rgba(16, 45, 36, 0.04);
+    }
+
+    .card h3 {
+      margin: 9px 0;
+      font-size: 20px;
+      line-height: 1.35;
+    }
+
+    .card p {
+      color: #59665f;
+      font-size: 15px;
+    }
+
+    .tag {
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: var(--green);
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--green);
+      color: white;
+      padding: 10px 14px;
+      text-decoration: none;
+      border-radius: 7px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .button:hover {
+      background: var(--dark);
+    }
+
+    .info {
+      background: #e6f2e9;
+      border-radius: 13px;
+      padding: 22px;
+      margin-top: 28px;
+    }
+
+    .info h2 {
+      margin-top: 0;
+    }
+
+    .article-section {
+      margin-top: 20px;
+      scroll-margin-top: 15px;
+    }
+
+    .article-section h2 {
+      font-size: 23px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #d7e5dd;
+      padding: 28px 20px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #a7e9c4;
+    }
+
+    .footer-inner {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    [hidden] {
+      display: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="#home">Smart Hustle KE</a>
+      <div>
+        <a href="#home">Home</a>
+        <a href="#guides">Guides</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+
+    <div class="hero" id="home">
+      <span class="eyebrow">Your digital growth starts here</span>
+      <h1>Discover smarter ways to earn online.</h1>
+      <p>
+        Practical guides to online opportunities, digital skills
+        and internet-based businesses, created with Kenyan
+        beginners in mind.
+      </p>
+      <a class="hero-link" href="#guides">Explore the guides ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="guides">
+      <div class="section-heading">
+        <h2>Explore our guides</h2>
+        <p class="muted">
+          Learn the basics before investing your time or money.
+        </p>
+      </div>
+
+      <input
+        class="search"
+        id="search"
+        type="search"
+        placeholder="Search apps, skills, affiliate marketing..."
+        aria-label="Search guides"
+      >
+
+      <div class="grid" id="articles">
+        <article class="card">
+          <span class="tag">ONLINE OPPORTUNITIES</span>
+          <h3>Online Earning Apps</h3>
+          <p>
+            Understand reward apps, survey platforms, payout
+            conditions and how to spot suspicious offers.
+          </p>
+          <a class="button" href="#apps">Read guide</a>
+        </article>
+
+        <article class="card">
+          <span class="tag">BUILD YOUR FUTURE</span>
+          <h3>Digital Skills You Can Learn Free</h3>
+          <p>
+            Discover coding, writing, graphic design and other
+            skills you can practise using free resources.
+          </p>
+          <a class="button" href="#skills">Read guide</a>
+        </article>
+
+        <article class="card">
+          <span class="tag">ONLINE BUSINESS</span>
+          <h3>Affiliate Marketing Basics</h3>
+          <p>
+            Learn how referral links and commissions work,
+            and how to recommend products honestly.
+          </p>
+          <a class="button" href="#affiliate">Read guide</a>
+        </article>
+
+        <article class="card">
+          <span class="tag">START A PROJECT</span>
+          <h3>Start a Website for Free</h3>
+          <p>
+            Learn the basics of building an online presence
+            without paying for hosting at the beginning.
+          </p>
+          <a class="button" href="#website">Read guide</a>
+        </article>
+
+        <article class="card">
+          <span class="tag">STAY SAFE</span>
+          <h3>Avoid Online Money Scams</h3>
+          <p>
+            Learn common warning signs, verify platforms
+            and protect your accounts and personal information.
+          </p>
+          <a class="button" href="#safety">Read guide</a>
+        </article>
+
+        <article class="card">
+          <span class="tag">FREELANCING</span>
+          <h3>Getting Your First Online Client</h3>
+          <p>
+            Understand portfolios, sample projects, client
+            communication and how to look for real work.
+          </p>
+          <a class="button" href="#freelance">Read guide</a>
+        </article>
+      </div>
+
+      <p id="no-results" class="muted" hidden>
+        No matching guides found. Try another search.
+      </p>
+    </section>
+
+    <section class="info" id="apps">
+      <h2>1. Before using an earning app</h2>
+      <p>
+        Check whether the service accepts users in Kenya,
+        its minimum withdrawal amount, payment methods,
+        fees and recent independent reviews. Never assume
+        that advertised earnings are guaranteed.
+      </p>
+    </section>
+
+    <section class="card article-section" id="skills">
+      <h2>2. Learn a digital skill</h2>
+      <p>
+        Choose one skill, use free tutorials, practise
+        consistently and create examples of your work.
+        You can then look for genuine paid projects.
+        Results depend on your skill, effort and demand.
+      </p>
+    </section>
+
+    <section class="card article-section" id="affiliate">
+      <h2>3. Understand affiliate marketing</h2>
+      <p>
+        An affiliate programme gives approved members
+        referral links. You may earn a commission when
+        someone completes a qualifying action through
+        your link. Read the terms and clearly disclose
+        affiliate relationships to your visitors.
+      </p>
+    </section>
+
+    <section class="card article-section" id="website">
+      <h2>4. Start an online project</h2>
+      <p>
+        Start with a useful topic, publish original content
+        and make the site easy to use on mobile phones.
+        Build trust and attract visitors before expecting
+        advertising or affiliate income.
+      </p>
+    </section>
+
+    <section class="card article-section" id="safety">
+      <h2>5. Protect yourself from online scams</h2>
+      <p>
+        Be careful with guaranteed-profit claims, pressure
+        to deposit money, unexplained withdrawal fees and
+        requests for passwords or verification codes.
+        Verify businesses independently before signing up.
+      </p>
+    </section>
+
+    <section class="card article-section" id="freelance">
+      <h2>6. Look for your first client</h2>
+      <p>
+        Build two or three sample projects that demonstrate
+        your ability. Describe your service clearly, agree
+        on payment terms before starting work, and use
+        reputable channels to find potential clients.
+      </p>
+    </section>
+
+    <section class="info article-section" id="about">
+      <h2>About Smart Hustle Kenya</h2>
+      <p>
+        Our goal is to help readers understand online
+        opportunities and develop practical digital skills.
+        We aim to explain both potential benefits and risks.
+      </p>
+      <p>
+        This site is educational. We do not guarantee income,
+        and we do not endorse every platform mentioned.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>
+        <strong>Smart Hustle Kenya</strong> —
+        practical online earning education.
+      </p>
+      <p>
+        Some links may become affiliate links in the future.
+        Any such relationships should be disclosed clearly.
+      </p>
+      <p>
+        © <span id="year"></span> Smart Hustle Kenya.
+        All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    const searchInput = document.getElementById("search");
+    const articles = Array.from(
+      document.querySelectorAll("#articles .card")
+    );
+    const noResults = document.getElementById("no-results");
+
+    searchInput.addEventListener("input", function () {
+      const query = searchInput.value.toLowerCase().trim();
+      let matches = 0;
+
+      articles.forEach(function (article) {
+        const found = article.textContent
+          .toLowerCase()
+          .includes(query);
+
+        article.hidden = !found;
+
+        if (found) {
+          matches++;
+        }
+      });
+
+      noResults.hidden = matches > 0;
+    });
+  </script>
+</body>
+  </html>
+  
